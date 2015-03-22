@@ -8,7 +8,7 @@ Link do repositório original: https://github.com/MatheusFaria/SisRES
 
 Desenvolvedores:
 
-Attany Nathaly Lima Araújo - 11/0147006
-Felipe Sampaio Marques Souza - 12/0044935
-Macário Soares da Cruz Júnior - 11/0016459
-Tainara Santos Reis - 10/0149378
+Attany Nathaly Lima Araújo - 11/0147006 </br>
+Felipe Sampaio Marques Souza - 12/0044935 </br>
+Macário Soares da Cruz Júnior - 11/0016459 </br>
+Tainara Santos Reis - 10/0149378 </br>
