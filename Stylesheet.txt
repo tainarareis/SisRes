@@ -1,30 +1,53 @@
-Stylesheet- SisRES
+Universidade de Brasília – Faculdade UnB Gama
+Disciplina: Técnicas de Programação
+Professor: Maurício Serrano
+Período: 1º/2015
+Data de entrega: 23 de março de 2015
+Estudantes:
+Attany Nathaly Lima Araújo 	11/0147006 
+Felipe Sampaio Marques Souza  	12/0044935 
+Macário Soares da Cruz Júnior   11/0016459 
+Tainara Santos Reis 		10/0149378 
+
+
+
+					Stylesheet - SisRES
 
 1) Comments
 
 Comments have to follow the pattern:
 
-	- One line comments have to be made using "//" before the comment.
-	- Comments in blocks have to be made between the '/*' and '*/'
- 
- 
-		Examples:
-		I) One line comment
-		
+	1.a) One line comments have to be made using "//" before the comment;
 			// This is the comment pattern
- 
-        	II) Comments in block 
- 
-                      	/**
+	
+	1.b) Comments in blocks have to be made between the '/*' and '*/';
+			/**
                     	* This is
                     	* the pattern
                     	* to be followed
                     	*/
+	1.c) To comment methods, the comment should precede it;
+		/**
+		* The methodo calculatePerimeter calculates the perimeter of a tringle using it sides.
+		* @return the triangle's perimeter
+		*/
+		float calculatePerimeter()
+		{
+		float result = side1+side2+side3;
+		return result;
+		}
+
+
+	1.d) To comment one line of code, the comment must be on the same line.
+ 		boolean equality;
+		equality = (side1 == side2); // is the side one equal to the side 2?
+ 
+                      
  
  
 2) Names: Classes, attributes and methods
 
-	The names of classes, attributes and methods will follow the convention addopted in Java, consists in:
+	The names of classes, attributes and methods will follow the convention addopted in Java, witch consists in:
 	- If the name of a class, attribute or method is composed by various words, the CamelCase pattern have to be followed, what consists in keep the initial letters of wich word in Caps.
        
         	Examples:
@@ -32,12 +55,10 @@ Comments have to follow the pattern:
                     	private int PersonAge (for attributes)
                     	public setPersonName( String name ) (for methods)
                     	
-	Classes names initiates with upper case.
-        Attributes names initiates witih lower case.
-        Methods names initiates with lower case.
-        Constants names have to be writed only in lower case.
-	
-                    	
+	- Classes names initiates with upper case.
+        - Attributes names initiates witih lower case.
+        - Methods names initiates with lower case.
+        - Constants names have to be writed only in lower case.        	
 
 	OBS: Only one variable declaration per line.
  
@@ -75,34 +96,27 @@ Comments have to follow the pattern:
 		- Have to be a blank space immediataly after the if.
 		- Have to be a blank space between the parentesis and the if condition. 
         	- The operators '==', '<=', '>=', '<', '>', '!=', '&&', '||' gone to have a blank space immediatally to the left and the right.
-		- After the parentesis what closes the if condition, have to be a blank space followed by a key what opens the body of the condition.
-		- The body of the if always have to be inside keys, even when composed by only one statement. 
-		- Else if or else have to be initiated one line beyond the key what closes the if body, following the same if padronization.
-		- After all ‘if’ or ‘else if’ structure, an ‘else’ estruture is always needed.
+		- After the parentesis what closes the 'if' condition, have to be a blank space followed by a key what opens the body of the condition.
+		- The body of the 'if' always have to be inside keys, even when composed by only one statement. 
+		- 'Else if' or 'else' have to be initiated one line beyond the key what closes the if body, following the same if padronization.
+		- After all 'if' or 'else if' structure, an 'else' estruture is always needed.
  
         	Examples:
                     	if ( this.idadePessoa < 18 ) {
                     	    System.out.println( "No authorizated to drive!" );
- 			}
-			else{
+ 			} else {
 			    // . . .
 			}
 
                     	if ( diaSemana == 1 ) {
                     		System.out.println( "Sunday" );
-                    	}
-                    	else if ( diaSemana == 2 ){
+                    	} else if ( diaSemana == 2 ) {
                     		System.out.println( "Monday" );
  			}
-                    	// ...
- 
-                    	else {
-                    	    System.out.println( "Saturday" )
-                    	}
- 
- 
+                    	
+                     	 
 6) Control structure: While
-While follows the same if pattern:
+               -While follows the same if pattern:
 
 		Example:
 
@@ -112,9 +126,9 @@ While follows the same if pattern:
  
  
 7) Control structure: For 
-For follows the same if pattern:
-        	- The operators '=', '==', '!=', '<=', '>=', '&&', '||', as ';' have to be a blank space to the left and to the right
-		- Commas will be positionated imeddiatally after the word what precedes it.
+                -For follows the same if pattern;
+        	- The operators '=', '==', '!=', '<=', '>=', '&&', '||', as ';' have to be a blank space to the left and to the right;
+		- Commas will be positionated imeddiatally after the word witch precedes it.
  
         	Examples:
                     	for ( int i = 0; i < numElements; i++ ) {
@@ -123,11 +137,11 @@ For follows the same if pattern:
  
  
 8) Control structure: Switch
-        	- Defaults and cases have to be indented.
-		- Statements of wich case or default have to be in the next line and indented.
+        	- Defaults and cases have to be indented;
+		- Statements of swich case or default have to be in the next line and indented.
  
         	Examples:
-                    	switch( dayWeek ) {
+                    	switch ( dayWeek ) {
                     		case 1:
                     	    	System.out.println( "Sunday" );
                     	    	break;
@@ -144,7 +158,7 @@ For follows the same if pattern:
  
  
 9) Treatment of Exceptions
-        	May be in the following pattern:
+        	- May be in the following pattern:
  
         	Example:
                     	try {
