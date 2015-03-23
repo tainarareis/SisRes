@@ -14,18 +14,17 @@ Tainara Santos Reis 		10/0149378
 					Stylesheet - SisRES
 
 1) Comments
-
-Comments have to follow the pattern:
+	- Comments have to follow the pattern:
 
 	1.a) One line comments have to be made using "//" before the comment;
-			// This is the comment pattern
+		// This is the comment pattern
 	
 	1.b) Comments in blocks have to be made between the '/*' and '*/';
-			/**
-                    	* This is
-                    	* the pattern
-                    	* to be followed
-                    	*/
+		/**
+                * This is
+                * the pattern
+                * to be followed
+                */
 	1.c) To comment methods, the comment should precede it;
 		/**
 		* The methodo calculatePerimeter calculates the perimeter of a tringle using it sides.
@@ -42,18 +41,15 @@ Comments have to follow the pattern:
  		boolean equality;
 		equality = (side1 == side2); // is the side one equal to the side 2?
  
-                      
- 
  
 2) Names: Classes, attributes and methods
-
-	The names of classes, attributes and methods will follow the convention addopted in Java, witch consists in:
+	- The names of classes, attributes and methods will follow the convention addopted in Java, witch consists in:
 	- If the name of a class, attribute or method is composed by various words, the CamelCase pattern have to be followed, what consists in keep the initial letters of wich word in Caps.
        
-        	Examples:
-                    	SportsCar extends Car (for classes)
-                    	private int PersonAge (for attributes)
-                    	public setPersonName( String name ) (for methods)
+        Examples:
+               	SportsCar extends Car (for classes)
+               	private int PersonAge (for attributes)
+               	public setPersonName( String name ) (for methods)
                     	
 	- Classes names initiates with upper case.
         - Attributes names initiates witih lower case.
@@ -63,108 +59,99 @@ Comments have to follow the pattern:
 	OBS: Only one variable declaration per line.
  
 3) Identation
-		
-		The code idention will follow the pattern normally used by Java:
-
-		- Keys wich initiate the body of a class, method or control structure have to be on the same line of the parameters, separated by a unique blank space.
+	- The code idention will follow the pattern normally used by Java:
+	- Keys wich initiate the body of a class, method or control structure have to be on the same line of the parameters, separated by a unique blank space.
     
- 
-        	Examples:
-                    	int functionName( parameter1, parameter2, parameter3 ) {
+       	Examples:
+               	int functionName( parameter1, parameter2, parameter3 ) {
 	
-		- The identation have to be made by four spaces or a equivalent tab.
- 
+	- The identation have to be made by four spaces or a equivalent tab.
  
 4) Classes
-		Classes have to follow the model:
-        	
-		- After the name of the class have to be a blank space followed by the character '{'.
-		- The next line after the class signature have to be a blank line.            	
+	- Classes have to follow the example.
+        - After the name of the class have to be a blank space followed by the character '{'.
+	- The next line after the class signature have to be a blank line.            	
  
-        	Example:
-                    	public class StyleSheet {
-
-                    		/**
-                    		* Have to be a blank line between
-                    		* the class signature and the
-                    		* first line of code of the class
-                    		*/
-                    	}      	
+       	Example:
+               	public class StyleSheet {
+               		/**
+               		* Have to be a blank line between
+               		* the class signature and the
+               		* first line of code of the class
+               		*/
+               	}      	
  
 
 5) Control Structure: IF
-		- Have to be a blank space immediataly after the if.
-		- Have to be a blank space between the parentesis and the if condition. 
-        	- The operators '==', '<=', '>=', '<', '>', '!=', '&&', '||' gone to have a blank space immediatally to the left and the right.
-		- After the parentesis what closes the 'if' condition, have to be a blank space followed by a key what opens the body of the condition.
-		- The body of the 'if' always have to be inside keys, even when composed by only one statement. 
-		- 'Else if' or 'else' have to be initiated one line beyond the key what closes the if body, following the same if padronization.
-		- After all 'if' or 'else if' structure, an 'else' estruture is always needed.
+	- Have to be a blank space immediataly after the if.
+	- Have to be a blank space between the parentesis and the if condition. 
+        - The operators '==', '<=', '>=', '<', '>', '!=', '&&', '||' gone to have a blank space immediatally to the left and the right.
+	- After the parentesis what closes the 'if' condition, have to be a blank space followed by a key what opens the body of the condition.
+	- The body of the 'if' always have to be inside keys, even when composed by only one statement. 
+	- 'Else if' or 'else' have to be initiated one line beyond the key what closes the if body, following the same if padronization.
+	- After all 'if' or 'else if' structure, an 'else' estruture is always needed.
  
-        	Examples:
-                    	if ( this.idadePessoa < 18 ) {
-                    	    System.out.println( "No authorizated to drive!" );
- 			} else {
-			    // . . .
-			}
+        Examples:
+               	if ( this.idadePessoa < 18 ) {
+        		System.out.println( "No authorizated to drive!" );
+ 		} else {
+		    // . . .
+		}
 
-                    	if ( diaSemana == 1 ) {
-                    		System.out.println( "Sunday" );
-                    	} else if ( diaSemana == 2 ) {
-                    		System.out.println( "Monday" );
- 			}
+               	if ( diaSemana == 1 ) {
+	       		System.out.println( "Sunday" );
+                } else if ( diaSemana == 2 ) {
+                	System.out.println( "Monday" );
+ 		}
                     	
                      	 
 6) Control structure: While
-               -While follows the same if pattern:
+        -While follows the same if pattern:
 
 		Example:
 
-                    	while ( count < numElements ) {
+                   	while ( count < numElements ) {
                     		sumElements = sumElements + 1;
                     	}
  
  
 7) Control structure: For 
-                -For follows the same if pattern;
-        	- The operators '=', '==', '!=', '<=', '>=', '&&', '||', as ';' have to be a blank space to the left and to the right;
-		- Commas will be positionated imeddiatally after the word witch precedes it.
+        -For follows the same if pattern;
+        - The operators '=', '==', '!=', '<=', '>=', '&&', '||', as ';' have to be a blank space to the left and to the right;
+	- Commas will be positionated imeddiatally after the word witch precedes it.
  
-        	Examples:
-                    	for ( int i = 0; i < numElements; i++ ) {
-                    		//OBS: might have a blank space after the ';' character.
-                    	}
+        Examples:
+               	for ( int i = 0; i < numElements; i++ ) {
+               		//OBS: might have a blank space after the ';' character.
+               	}
  
  
 8) Control structure: Switch
-        	- Defaults and cases have to be indented;
-		- Statements of swich case or default have to be in the next line and indented.
+        - Defaults and cases have to be indented;
+	- Statements of swich case or default have to be in the next line and indented.
  
-        	Examples:
-                    	switch ( dayWeek ) {
-                    		case 1:
-                    	    	System.out.println( "Sunday" );
-                    	    	break;
-                    		case 2:
-                    	    	System.out.println( "Monday" );
-                    	    	break;
- 
-                    		// ...
- 
-                    		default:
-                    	    	System.out.printn( "" );
-                    	    	break;
-                    	}
+        Examples:
+               	switch ( dayWeek ) {
+               		case 1:
+               	    		System.out.println( "Sunday" );
+               	    		break;
+               		case 2:
+               	    		System.out.println( "Monday" );
+               	    		break;
+               		default:
+              	    		System.out.printn( "" );
+               	    		break;
+                }
  
  
 9) Treatment of Exceptions
-        	- May be in the following pattern:
+        - May be in the following pattern:
  
-        	Example:
+        Example:
                     	try {
                     		// block to be executed
                     	}
-                    	catch( exception ) {
+                    	catch ( exception ) {
                     		// chatch's instructions block
                     	}
                     	finally {
@@ -172,5 +159,5 @@ Comments have to follow the pattern:
                     	}
 
 10) Coding language 
-		The coding language for programming tecniques applying is English.
+	The coding language for programming tecniques applying is English.
 
