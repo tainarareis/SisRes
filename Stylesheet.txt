@@ -1,0 +1,154 @@
+Stylesheet- SisRES
+
+1) Comments
+
+Comments have to follow the pattern:
+
+	- One line comments have to be made using "//" before the comment.
+	- Comments in blocks have to be made between the '/*' and '*/'
+ 
+ 
+		Examples:
+		I) One line comment
+		
+			// This is the comment pattern
+ 
+        	II) Comments in block 
+ 
+                      	/**
+                    	* This is
+                    	* the pattern
+                    	* to be followed
+                    	*/
+ 
+ 
+2) Names: Classes, attributes and methods
+
+	The names of classes, attributes and methods will follow the convention addopted in Java, consists in:
+	- If the name of a class, attribute or method is composed by various words, the CamelCase pattern have to be followed, what consists in keep the initial letters of wich word in Caps.
+       
+        	Examples:
+                    	SportsCar extends Car (for classes)
+                    	private int PersonAge (for attributes)
+                    	public setPersonName( String name ) (for methods)
+                    	
+	Classes names initiates with upper case.
+        Attributes names initiates witih lower case.
+        Methods names initiates with lower case.
+        Constants names have to be writed only in lower case.
+	
+                    	
+
+	OBS: Only one variable declaration per line.
+ 
+3) Identation
+		
+		The code idention will follow the pattern normally used by Java:
+
+		- Keys wich initiate the body of a class, method or control structure have to be on the same line of the parameters, separated by a unique blank space.
+    
+ 
+        	Examples:
+                    	int functionName( parameter1, parameter2, parameter3 ) {
+	
+		- The identation have to be made by four spaces or a equivalent tab.
+ 
+ 
+4) Classes
+		Classes have to follow the model:
+        	
+		- After the name of the class have to be a blank space followed by the character '{'.
+		- The next line after the class signature have to be a blank line.            	
+ 
+        	Example:
+                    	public class StyleSheet {
+
+                    		/**
+                    		* Have to be a blank line between
+                    		* the class signature and the
+                    		* first line of code of the class
+                    		*/
+                    	}      	
+ 
+
+5) Control Structure: IF
+		- Have to be a blank space immediataly after the if.
+		- Have to be a blank space between the parentesis and the if condition. 
+        	- The operators '==', '<=', '>=', '<', '>', '!=', '&&', '||' gone to have a blank space immediatally to the left and the right.
+		- After the parentesis what closes the if condition, have to be a blank space followed by a key what opens the body of the condition.
+		- The body of the if always have to be inside keys, even when composed by only one statement. 
+		- Else if or else have to be initiated one line beyond the key what closes the if body, following the same if padronization.
+ 
+        	Examples:
+                    	if ( this.idadePessoa < 18 ) {
+                    	    System.out.println( "No authorizated to drive!" );
+ 
+                    	if ( diaSemana == 1 ) {
+                    		System.out.println( "Sunday" );
+                    	}
+                    	else if ( diaSemana == 2 )
+                    		System.out.println( "Monday" );
+ 
+                    	// ...
+ 
+                    	else {
+                    	    System.out.println( "Saturday" )
+                    	}
+ 
+ 
+6) Control structure: While
+While follows the same if pattern:
+
+		Example:
+
+                    	while ( count < numElements ) {
+                    		sumElements = sumElements + 1;
+                    	}
+ 
+ 
+7) Control structure: For 
+For follows the same if pattern:
+        	- The operators '=', '==', '!=', '<=', '>=', '&&', '||', as ';' have to be a blank space to the left and to the right
+		- Commas will be positionated imeddiatally after the word what precedes it.
+ 
+        	Examples:
+                    	for ( int i = 0; i < numElements; i++ ) {
+                    		//OBS: might have a blank space after the ';' character.
+                    	}
+ 
+ 
+8) Control structure: Switch
+        	- Defaults and cases have to be indented.
+		- Statements of wich case or default have to be in the next line and indented.
+ 
+        	Examples:
+                    	switch( dayWeek ) {
+                    		case 1:
+                    	    	System.out.println( "Sunday" );
+                    	    	break;
+                    		case 2:
+                    	    	System.out.println( "Monday" );
+                    	    	break;
+ 
+                    		// ...
+ 
+                    		default:
+                    	    	System.out.printn( "" );
+                    	    	break;
+                    	}
+ 
+ 
+9) Treatment of Exceptions
+        	May be in the following pattern:
+ 
+        	Example:
+                    	try {
+                    		// block to be executed
+                    	}
+                    	catch( exception ) {
+                    		// chatch's instructions block
+                    	}
+                    	finally {
+                    		// finally instructions block
+                    	}
+
