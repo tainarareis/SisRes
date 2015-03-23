@@ -78,17 +78,22 @@ Comments have to follow the pattern:
 		- After the parentesis what closes the if condition, have to be a blank space followed by a key what opens the body of the condition.
 		- The body of the if always have to be inside keys, even when composed by only one statement. 
 		- Else if or else have to be initiated one line beyond the key what closes the if body, following the same if padronization.
+		- After all ‘if’ or ‘else if’ structure, an ‘else’ estruture is always needed.
  
         	Examples:
                     	if ( this.idadePessoa < 18 ) {
                     	    System.out.println( "No authorizated to drive!" );
- 
+ 			}
+			else{
+			    // . . .
+			}
+
                     	if ( diaSemana == 1 ) {
                     		System.out.println( "Sunday" );
                     	}
-                    	else if ( diaSemana == 2 )
+                    	else if ( diaSemana == 2 ){
                     		System.out.println( "Monday" );
- 
+ 			}
                     	// ...
  
                     	else {
@@ -151,4 +156,7 @@ For follows the same if pattern:
                     	finally {
                     		// finally instructions block
                     	}
+
+10) Coding language 
+		The coding language for programming tecniques applying is English.
 
